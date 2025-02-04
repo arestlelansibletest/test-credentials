@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test-credential"
+version = "0.1.0"
+description = "A project that uses PyGitHub"
+dependencies = [
+    "PyGithub>=2.5.0", 
+]
+
+[project.scripts]
+test-credential = "test_github:main"
+
+[tool.setuptools]
+# Tell setuptools that your modules live in the src directory.
+package-dir = {"" = "src"}
+# Since your main program is a single module (not in a package),
+# list it as a py-module.
+py-modules = ["test_github"]
