@@ -8,6 +8,7 @@ install_id=60185608
 ssh_keyfile='/home/arestlel/Downloads/arestlel-github-app-ansible.2025-01-23.private-key.pem'
 jwt_expiry=600
 github_api_url='https://api.github.com'
+repo = 'arestlelansibletest/private_project'
 
 
 # Read the private key from the file
@@ -45,3 +46,5 @@ Github(  # Generate a GitHub App authentication token
 )
 
 print (auth.token)
+
+print(f'git clone https://x-access-token:{auth.token}@github.com/{repo}')
