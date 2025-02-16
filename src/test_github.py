@@ -45,6 +45,7 @@ Github(  # Generate a GitHub App authentication token
     **extra_gh_args,
 )
 
-print (auth.token)
+token = f'x-access-token:{auth.token}'
+print(token)
 
-print(f'git clone https://x-access-token:{auth.token}@github.com/{repo}')
+print(f'git clone https://{token}@github.com/{repo}')
