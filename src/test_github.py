@@ -10,6 +10,11 @@ jwt_expiry=600
 github_api_url='https://api.github.com'
 repo = 'arestlelansibletest/private_project'
 
+app_id=1146310 # https://github.com/organizations/arestlelansibletest/settings/apps/arestlelansibletest-github-app
+install_id=61106080
+ssh_keyfile='/home/arestlel/Videos/arestlelansibletest-github-app.2025-02-15.private-key.pem'
+repo = 'arestlelansibletest/private_project'
+
 
 # Read the private key from the file
 # private_key=pem.parse_file(ssh_keyfile)
